@@ -1,11 +1,15 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  example_job:
     runs-on: ubuntu-latest
-    name: A job to add Github Article to instapaper account
+    name: A job to add a Github Article to instapaper account
     steps:
-      - name: Add 
-        uses: irfansofyana/instapaper-actions@v0.1.0
+      - name: Add example article
+        uses: irfansofyana/instapaper-actions@v0.1.2
         with:
-          who-to-greet: 'Mona the Octocat'
+          username: ${{ secrets.INSTAPAPER_USERNAME }}
+          password: ${{ secrets.INSTAPAPER_PASSWORD }}
+          url: https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action
+          title: Creating Javascript Action
+          selection: This article is added by Github Action
