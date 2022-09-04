@@ -1,5 +1,5 @@
-import axios from 'axios'
-import FormData from 'form-data'
+const axios = require('axios')
+const FormData = require('form-data')
 
 class Client {
     constructor(username, password) {
@@ -52,4 +52,4 @@ main = async () => {
     }
 }
 
-await main()
+main()
