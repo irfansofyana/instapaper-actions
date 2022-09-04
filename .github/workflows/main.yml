@@ -3,13 +3,13 @@ on: [push]
 jobs:
   example_job:
     runs-on: ubuntu-latest
-    name: A job to add a Github Article to instapaper account
+    name: A job to add a medium Article to instapaper account
     steps:
       - name: Add example article
-        uses: irfansofyana/instapaper-actions@v0.1.7
+        uses: irfansofyana/instapaper-actions@v1.0.0
         with:
           username: ${{ secrets.INSTAPAPER_USERNAME }}
           password: ${{ secrets.INSTAPAPER_PASSWORD }}
-          url: https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action
-          title: Creating Javascript Action
+          url: https://medium.com/@gibinfrancis/software-architect-journey-ca9398546608
+          title: Software Architect — Journey
           selection: This article is added by Github Action
