@@ -1,0 +1,26 @@
+{
+  "name": "instapaper-actions",
+  "version": "1.0.0",
+  "description": "Github action to add online media into your instapaper account.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfansofyana/instapaper-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irfansofyana/instapaper-actions/issues"
+  },
+  "homepage": "https://github.com/irfansofyana/instapaper-actions#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3",
+    "axios": "^0.27.2",
+    "form-data": "^4.0.0"
+  }
+}

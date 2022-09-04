@@ -1,2 +1,2 @@
 # instapaper-actions
-Github action to add online media into your instapaper account.
+Github action to add web contents into your instapaper account.

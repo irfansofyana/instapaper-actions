@@ -1,0 +1,19 @@
+name: 'instapaper-actions'
+description: 'Save web contents to your instapaper account'
+inputs:
+  username:
+    description: 'Your Instapaper username account'
+    required: true
+  password:
+    description: 'Your Instapaper password account'
+    required: true
+  url:
+    description: 'URL that you want to save to instapaper'
+  title:
+    description: 'Title of the content that you want to save'
+    default: ''
+  selection:
+    description: 'The description under the content in the interface'
+runs:
+  using: 'node16'
+  main: 'index.js'
