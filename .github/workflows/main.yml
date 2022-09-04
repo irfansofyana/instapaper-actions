@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to add Github Article to instapaper account
+    steps:
+      - name: Add 
+        uses: irfansofyana/instapaper-actions@v0.1.0
+        with:
+          who-to-greet: 'Mona the Octocat'
