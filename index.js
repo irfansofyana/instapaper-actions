@@ -46,7 +46,7 @@ main = async () => {
         const title = core.getInput('title')
         const selection = core.getInput('selection')
 
-        const client = Client(username, password)
+        const client = new Client(username, password)
         await client.addURL(url, title, selection)
     } catch (error) {
         core.setFailed(error.message);
