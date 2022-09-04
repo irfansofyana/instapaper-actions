@@ -1,5 +1,6 @@
 const axios = require('axios')
 const FormData = require('form-data')
+const core = require('@actions/core');
 
 class Client {
     constructor(username, password) {
