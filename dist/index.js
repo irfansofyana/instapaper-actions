@@ -7795,7 +7795,7 @@ class Client {
                     username: this.username,
                     password: this.password,
                 },
-                data: this.buildFormData(url, title, selection, redirect)
+                data: this.buildFormData(url, title, selection)
             }
         
             return await axios(config)

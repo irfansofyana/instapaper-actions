@@ -6,7 +6,7 @@ jobs:
     name: A job to add a Github Article to instapaper account
     steps:
       - name: Add example article
-        uses: irfansofyana/instapaper-actions@v0.1.6
+        uses: irfansofyana/instapaper-actions@v0.1.7
         with:
           username: ${{ secrets.INSTAPAPER_USERNAME }}
           password: ${{ secrets.INSTAPAPER_PASSWORD }}
